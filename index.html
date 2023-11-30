@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+Personal Website
+-->
+<html>
+	<head>
+		<title>Personal Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Jhoel Carballo-Murga</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="generic.html">Under Construction</a></li>
+								<li><a href="elements.html">Under Construction</a></li>
+								<!-- <li><a href="#">Log In</a></li> -->
+								<!-- <li><a href="#">Sign Up</a></li> -->
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"><span class="icon fa-gem"></span></div>
+							<h2>Hi, im Jhoel Carballo-Murga</h2>
+							<p>Student at George Mason University <a href="http://html5up.net"></a></p>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/headshot.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">About Me</h2>
+										<p>I'm currenlty an undergraduate student with a passion for merging the worlds of Business Analytics and Management Information Systems (MIS). My journey is fueled by a keen interest in driving innovation through cloud computing technologies. My academic journey has offered me a robust and well-rounded understanding of the intricate relationship between technology and data-driven decision-making. </p>
+										<!--<a href="#" class="special">Learn more</a> -->
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/GMU_logo.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Education - George Mason University, 2023</h2>
+										<h2 class="major">B.S, Management Information Systems <br> B.S, Business Analytics</h2>
+										<p>Bachelor of Science in Management Information Systems - Throughout my academic journey, I have been immersed  in a diverse range of coursework, cultivating a robust foundation in data analysis, information systems, and strategic decision-making. Additionally, I have focused my attention on leveraging the power of cloud computing, recognizing its transformative potential in enhancing operational efficiency and scalability 
+
+										</p>
+										<p> Bachelor of Science in Business Analytics - Equipped with skills in data visualization, statistical programming, and database management. Through coursework, I've demonstrated my ability to turn complex data into understandable narratives. I have experience in tools such as Java, R, SQL, and Python, I bring a hands-on approach to analyzing and interpreting data. Proven ability to transform data into actionable insights, driving informed business decisions, and optimizing processes for enhanced efficiency and competitiveness.
+
+										</p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="#" class="image"><img src="images/Cert_logo.jpg" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Technical Skills and Certifications</h2>
+										<p> Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, and Outlook).<br>
+											Java: Experience in developing and implementing Java applications for business solutions.
+											R: Proficient in statistical computing and data analysis, using R for extracting insights.
+											Python: Skilled in scripting, using Python for  data-related tasks and analytics.<br>
+										    SQL: Experienced in writing SQL queries to extract, analyze, and manipulate data.<br>
+											Solutions Architect Associate-C03 Certification. Amazon Web Services, Issued Nov 2023.</p>
+										<a href="#" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">Projects</h2>
+									<p>Below are some of my personal projects array of initiatives that span programming, data analysis, and cloud architecture, showcasing not only technical proficiency but also a keen understanding of how technology can drive meaningful impact in various domains. Each project represents a step in my journey of exploration, problem-solving, and collaboration.</p>
+									<section class="features">
+										<article>
+											<a href="images/Wordpress Architecture.png" class="image"><img src="images/Wordpress Architecture.png" alt="" /></a>
+											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS <br>
+											Using EC2, ALB, EFS, ALB, and Auto Scaling</h3>
+											<p> Wordpress Application <br>
+											- User connection using Application Load Balancer DNS with cross-zone load balancing across 3 AZ's with health checks. <br>
+											- Configured EC2 Auto Scaling Group from launch template boostrapped with Apache + Wordpress installations. <br>
+											- Created Dynamic Scaling policy based on Wordpress App Min/Max CPU Utilization thresholds. <br> 
+											- Mounted EFS file system to enable Wordpress media access across all instances.<br>
+											- Migrated local EC2 MariaDB database to RDS running MySQL across a 3 AZ Subnet Group.
+										</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
+											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="image"><img src="images/Serverless MiniProject.jpg" alt="" /></a>
+											<h3 class="major">Serverless Application hosted on AWS <br> Using S3, API Gateway, Lambda, Step Functions, and SES</h3>
+											<p>Serverless Email Reminder <br>
+											- Created necessary IAM Roles for application services with appropiate permissions. <br>
+											- Hosted frontend static website on an S3 bucket with HTML, JavaScript, and CSS files. JS used to take required user inputs and communicate with API Endpoint. <br>
+										    - Deployed REST API enpoint to invoke API_Lambda for backend compute. <br>
+											- Configured State Machine to use SES via Email_Lambda with user inputs. <br>
+											- State Machine invokes Email_Lambda to use SES. <br>
+											- SES sends email reminder with input payload from JS. </p>
+											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="special">View</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
+											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS</h3>
+											<p>PLACEHOLDER.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Jenkins Server on EC2</h3>
+											<p>PLACEHOLDER.</p>
+											<a href="#" class="special">Learn more</a>
+										</article>
+										<article>
+											<a href="generic.html" class="image"><img src="images/pic07.jpg" alt="" /></a>
+											<h3 class="major">Predictive Modeling in R</h3>
+											<p>PLACEHOLDER.</p>
+											<a href="generic.html" class="special">Learn more</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="#" class="button">Browse All</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">
+								🌐 Get in touch </h2>
+							<p> I'm excited to connect and share insights. Whether you're a seasoned professional, a fellow classmate, or someone eager to dive into the world of data and technology, I'd be more than happy to connect!.
+
+							</p>
+							 <!-- <form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="4"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form> -->
+							<ul class="contact">
+								<li class="icon solid fa-home">
+									Northern Virginia, VA<br />
+									<!-- 1234 Somewhere Road Suite #2894<br />
+									Nashville, TN 00000-0000 -->
+								</li>
+								<!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
+								<li class="icon solid fa-envelope"><a href="jhrcarball@gmail.com">jhrcarball@gmail.com</a></li>
+								<!-- <li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li> -->
+								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/jhoel-carballo-376932232/">https://www.linkedin.com/in/jhoel-carballo-376932232/</a></li>
+								<!-- <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
+							</ul>
+							<ul class="copyright">
+								<!-- <li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
