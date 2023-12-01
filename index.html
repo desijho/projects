@@ -102,10 +102,10 @@ Personal Website
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Projects</h2>
-									<p>Below are some of my personal projects array of initiatives that span programming, data analysis, and cloud architecture, showcasing not only technical proficiency but also a keen understanding of how technology can drive meaningful impact in various domains. Each project represents a step in my journey of exploration, problem-solving, and collaboration.</p>
+									<p>Below are some of my personal projects array of initiatives that span programming, data analysis, and cloud architecture, showcasing not only technical experience but also a keen understanding of how technology can drive meaningful impact in various domains. Each project represents a step in my journey of exploration, problem-solving, and collaboration.</p>
 									<section class="features">
 										<article>
-											<a href="images/Wordpress Architecture.png" class="image"><img src="images/Wordpress Architecture.png" alt="" /></a>
+											<a href="images/Wordpress Architecture.png" class="image"><img src="images/WordpressArchitecture.png" alt="" /></a>
 											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS <br>
 											Using EC2, ALB, EFS, ALB, and Auto Scaling</h3>
 											<p> Wordpress Application <br>
@@ -118,7 +118,7 @@ Personal Website
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
-											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="image"><img src="images/Serverless MiniProject.jpg" alt="" /></a>
+											<a href="images/ServerlessEmailArchitecture.jpg" class="image"><img src="images/ServerlessEmailArchitecture.jpg" alt="" /></a>
 											<h3 class="major">Serverless Application hosted on AWS <br> Using S3, API Gateway, Lambda, Step Functions, and SES</h3>
 											<p>Serverless Email Reminder <br>
 											- Created necessary IAM Roles for application services with appropiate permissions. <br>
@@ -127,13 +127,22 @@ Personal Website
 											- Configured State Machine to use SES via Email_Lambda with user inputs. <br>
 											- State Machine invokes Email_Lambda to use SES. <br>
 											- SES sends email reminder with input payload from JS. </p>
-											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="special">View</a>
+											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="special">View it!</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS</h3>
-											<p>PLACEHOLDER.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="images/WebsiteArchitecture" class="image"><img src="images/WebsiteArchitecture" alt="" /></a>
+											<h3 class="major"> Website hosted on AWS <br>
+												Using S3, Route 53, CloudFront, ACM, Lambda, DynamoDB, CodePipeline, Github  </h3>
+											<p> Personal Website <br>
+											- Created S3 bucket with website domain name. <br>
+											- Deployed CloudFront CDN distribution with S3 bucket as OAC. <br>
+											- Registered domain with Route 53 and created an A record to route domain to CloudFront distribution. <br>	
+											- Obtained SSL certificate from ACM to ensure HTTPS connection. <br>
+											- Created DynamoDB table to store website view count. <br>
+											- Created Lambda function enabled with CORS to increment DynamoDB view count table based on website viewership. <br>
+											- Established connection to Github repository using CodePipeline to automate updates.
+											</p>
+											<a href="jhoelcarballo.com" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
