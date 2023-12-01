@@ -43,7 +43,7 @@ Personal Website
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
 							<h2>Hi, im Jhoel Carballo-Murga</h2>
-							<p>Student at George Mason University <a href="http://html5up.net"></a></p>
+							<p> Welcome to my website <a href="http://html5up.net"></a></p>
 							<div class="counter-number"></div>
 						</div>
 					</section>
@@ -107,11 +107,11 @@ Personal Website
 										<article>
 											<a href="images/Wordpress Architecture.png" class="image"><img src="images/WordpressArchitecture.png" alt="" /></a>
 											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS <br>
-											Using EC2, ALB, EFS, ALB, and Auto Scaling</h3>
+											Using EC2, ALB, EFS, ALB, Cloudwatch, and Auto Scaling</h3>
 											<p> Wordpress Application <br>
 											- User connection using Application Load Balancer DNS with cross-zone load balancing across 3 AZ's with health checks. <br>
 											- Configured EC2 Auto Scaling Group from launch template boostrapped with Apache + Wordpress installations. <br>
-											- Created Dynamic Scaling policy based on Wordpress App Min/Max CPU Utilization thresholds. <br> 
+											- Created Dynamic Scaling policy based on Wordpress App Min/Max CPU Utilization thresholds using CloudWatch. <br> 
 											- Mounted EFS file system to enable Wordpress media access across all instances.<br>
 											- Migrated local EC2 MariaDB database to RDS running MySQL across a 3 AZ Subnet Group.
 										</p>
