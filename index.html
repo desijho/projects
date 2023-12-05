@@ -76,7 +76,7 @@ Personal Website
 										<p> Bachelor of Science in Business Analytics - Equipped with skills in data visualization, statistical programming, and database management. Through coursework, I've demonstrated my ability to turn complex data into understandable narratives. I have experience in tools such as Java, R, SQL, and Python, I bring a hands-on approach to analyzing and interpreting data. Proven ability to transform data into actionable insights, driving informed business decisions, and optimizing processes for enhanced efficiency and competitiveness.
 
 										</p>
-										<a href="#" class="special">Learn more</a>
+										<!-- <a href="#" class="special">Learn more</a> -->
 									</div>
 								</div>
 							</section>
@@ -93,7 +93,7 @@ Personal Website
 											Python: Skilled in scripting, using Python for  data-related tasks and analytics.<br>
 										    SQL: Experienced in writing SQL queries to extract, analyze, and manipulate data.<br>
 											Solutions Architect Associate-C03 Certification. Amazon Web Services, Issued Nov 2023.</p>
-										<a href="#" class="special">Learn more</a>
+										<a href="https://www.credly.com/badges/41edb1f9-6f72-4723-af00-f3c66b606f2d/public_url" class="special">Verify Credential</a>
 									</div>
 								</div>
 							</section>
@@ -109,11 +109,11 @@ Personal Website
 											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS <br>
 											Using EC2, ALB, EFS, ALB, Cloudwatch, and Auto Scaling</h3>
 											<p> Wordpress Application <br>
-											- User connection using Application Load Balancer DNS with cross-zone load balancing across 3 AZ's with health checks. <br>
-											- Configured EC2 Auto Scaling Group from launch template boostrapped with Apache + Wordpress installations. <br>
-											- Created Dynamic Scaling policy based on Wordpress App Min/Max CPU Utilization thresholds using CloudWatch. <br> 
-											- Mounted EFS file system to enable Wordpress media access across all instances.<br>
-											- Migrated local EC2 MariaDB database to RDS running MySQL across a 3 AZ Subnet Group.
+											In this project, I succesfully orchestrated the deployment of a scalable WordPress application on AWS, utilizing an Application Load Balancer for efficient traffic distribution.
+												Automation through an EC2 Auto Scaling Group with a customized launch template streamlined the process.
+												Dynamic scaling policies based on CPU utilization thresholds were implemented for optimal resource management.
+												Media access across instances was facilitated through an integrated Elastic File System (EFS).
+												The project also involved migrating a local EC2 MariaDB database to an RDS instance for enhanced scalability and reliability.
 										</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
@@ -121,12 +121,14 @@ Personal Website
 											<a href="images/ServerlessEmailArchitecture.png" class="image"><img src="images/ServerlessEmailArchitecture.png" alt="" /></a>
 											<h3 class="major">Serverless Application hosted on AWS <br> Using S3, API Gateway, Lambda, Step Functions, and SES</h3>
 											<p>Serverless Email Reminder <br>
-											- Created necessary IAM Roles for application services with appropiate permissions. <br>
-											- Hosted frontend static website on an S3 bucket with HTML, JavaScript, and CSS files. JS used to take required user inputs and communicate with API Endpoint. <br>
-										    - Deployed REST API enpoint to invoke API_Lambda for backend compute. <br>
-											- Configured State Machine to use SES via Email_Lambda with user inputs. <br>
-											- State Machine invokes Email_Lambda to use SES. <br>
-											- SES sends email reminder with input payload from JS. </p>
+											
+											I designed and implemented a Serverless Email Reminder system, ensuring a seamless flow of communication.
+											IAM Roles were meticulously set up, granting appropriate permissions for the application services. 
+												The frontend static website, containing HTML, JavaScript, and CSS files, was hosted on an S3 bucket.
+												JavaScript facilitated user input and communication with an API Endpoint.
+												A REST API Endpoint was deployed to invoke the API_Lambda for backend compute. 
+												I configured a State Machine to utilize SES via Email_Lambda, incorporating user inputs.
+												The State Machine then invoked Email_Lambda, which interfaced with SES to send email reminders, effectively utilizing the input payload from the frontend JavaScript.
 											<a href="http://jc-serverless-pj.s3-website-us-east-1.amazonaws.com" class="special">View it!</a>
 										</article>
 										<article>
@@ -134,14 +136,13 @@ Personal Website
 											<h3 class="major"> Website hosted on AWS <br>
 												Using S3, Route 53, CloudFront, ACM, Lambda, DynamoDB, CodePipeline, Github  </h3>
 											<p> Personal Website <br>
-											- Created S3 bucket with website domain name. <br>
-											- Deployed CloudFront CDN distribution with S3 bucket as OAC. <br>
-											- Registered domain with Route 53 and created an A record to route domain to CloudFront distribution. <br>	
-											- Obtained SSL certificate from ACM to ensure HTTPS connection. <br>
-											- Created DynamoDB table to store website view count. <br>
-											- Created Lambda function enabled with CORS to increment DynamoDB view count table based on website viewership. <br>
-											- Established connection to Github repository using CodePipeline to automate updates.
-											</p>
+											I developed a personal website using AWS services for optimal performance and functionality. Starting with the creation of an S3 bucket, I deployed a CloudFront CDN distribution with the S3 bucket as the origin access identity (OAC).
+												The domain was registered with Route 53, and an A record was configured to direct traffic to the CloudFront distribution.
+												Security was enhanced with an SSL certificate obtained from ACM to ensure a secure HTTPS connection.
+												For visitor tracking, a DynamoDB table was set up to store website view counts.
+												A Lambda function, equipped with CORS, was created to increment the DynamoDB view count table based on website viewership.
+												To streamline updates, a connection to a GitHub repository was established using CodePipeline, automating the deployment process.
+												This project reflects my proficiency in leveraging AWS services to create a secure, dynamic, and automated personal website.
 											<a href="jhoelcarballo.com" class="special">Learn more</a>
 										</article>
 										<article>
