@@ -158,10 +158,10 @@ Personal Website
 									        <article>
 											<a href="images/WEBIDF_Architecture.png" class="image"><img src="images/WEBIDF_Architecture.png" alt="" /></a>
 											<h3 class="major">Web Identity Federation With AWS Cognito and Google Authenticaiton</h3>
-											<p>This project demonstrates a secure and scalable web application architecture using AWS Web Identity Federation and Google Authentication. Users authenticate through Google,
-												receiving a token that is then exchanged for temporary AWS credentials via an Amazon Cognito Identity Pool. These credentials enable authorized access to private resources stored in an Amazon S3 bucket.
-												The architecture also integrates CloudFront to efficiently deliver content, including public files hosted in a separate S3 bucket. Non-authenticated users are denied access to the private resources, ensuring robust security.
-												This implementation highlights the use of modern identity federation techniques to provide seamless user authentication and secure access control for sensitive data.
+											<p>This project demonstrates a secure and scalable web application architecture using AWS Web Identity Federation and Google Authentication. This architecture integrates CloudFront to efficiently deliver content, including the publically accessible static website files that are hosted in a S3 bucket.
+												Users are prompted to authenticate through Google, receiving a token that is then exchanged for temporary AWS credentials via an Amazon Cognito Identity Pool. These credentials enable authorized access to private resources stored in an Amazon S3 bucket.
+												Non-authenticated users are denied access to the private resources, ensuring robust security.
+												This implementation highlights the use of modern identity federation techniques to provide  user authentication and secure access control for sensitive data.
 											</p>
 											<!-- <a href="images/WEBIDF_Diagram" class="special">Learn more</a> -->
 										</article> 
