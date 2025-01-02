@@ -105,35 +105,48 @@ Personal Website
 									<p>Below are some of my personal projects array of initiatives that span programming, data analysis, and cloud architecture, showcasing technical experience and understanding of how technology can drive meaningful impact in various domains. Each project represents a step in my journey of exploration and problem-solving.</p>
 									<section class="features">
 										<article>
+											<a href="images/" class="image"><img src="images/" alt="" /></a>
+											<h3 class="major">Simulated Dynamic Hybrid Cloud Architecture<br>
+												With AWS Transit Gateway, Global Accelerator, and Secure VPN</h3>
+											<p>  <br>
+											This project showcases a secure and redundant Hybrid Cloud Architecture that integrates an on-premises simulated network with AWS.
+											The on-premises network is represented by EC2 instances configured as routers and servers, which connect to AWS cloud infrastructure servers through secure IPsec VPN tunnels at GLobal Accelerator VPN endpoints.
+											Dynamic routing is achieved using Border Gateway Protocol (BGP) via the Transit Gateway to enable communication between the on-premises network and the AWS VPC. The VPC hosts instances across multiple Availability Zones,
+											ensuring high availability and fault tolerance. This architecture demonstrates secure, scalable, and highly available hybrid connectivity, ideal for enterprises looking to extend or integrate their on-premises infrastructure with AWS.
+										</p>
+											<!-- <a href="#" class="special">Learn more</a> -->
+										</article>
+										<article>
 											<a href="https://storage.jhoelcarballo.com" class="image"><img src="images/StorageBrowserUI.png" alt="" /></a>
 											<h3 class="major"> Secure cloud S3 storage explorer <br>
 												Using Next.js, S3, Amplify, Cognito, Route 53, Lambda, DynamoDB, CodePipeline</h3>
 											<p>  <br>
-												This project is a Secure Cloud Storage Explorer built with AWS Amplify and Next.js, designed to allow users to securely browse, upload, and access files which is stored in S3 on their browser. The application uses Amazon Cognito for user authentication, requiring administrator approval for account activation, ensuring secure access.
-												Users can navigate the S3 bucket's file structure, view documents directly in the browser, and manage files easily. Hosted on AWS Amplify, the project utilizes other various AWS services like DynamoDB, Lambda, and CloudFront,
+												This project is a Secure Cloud Storage Explorer built with AWS Amplify and Next.js, designed to allow users to securely browse, upload, and access files which is stored in S3 on their browser.
+												The application uses Amazon Cognito for user authentication, requiring administrator approval for account activation, ensuring secure access.
+												Users can navigate the S3 bucket's file structure, view documents directly in the browser, and manage files easily. Hosted on AWS Amplify Gen 2, the project utilizes other various AWS services like DynamoDB, Lambda, and CloudFront,
 												demonstrating a serverless application with modern frameworks and cloud technologies.
 											 <a href="https://storage.jhoelcarballo.com" class="special">View it!</a> 
 										</article>
 										<article>
 											<a href="images/WordpressArchitecture.png" class="image"><img src="images/WordpressArchitecture.png" alt="" /></a>
-											<h3 class="major">Scalable and redundant Wordpress Application hosted on AWS<br>
+											<h3 class="major">Scalable and Redundant Wordpress Application hosted on AWS<br>
 											Using EC2, ALB, EFS, RDS, Cloudwatch, and Auto Scaling</h3>
 											<p>  <br>
-											In this project, I succesfully orchestrated the deployment of a scalable WordPress application on AWS, utilizing an Application Load Balancer for efficient traffic distribution.
+											In this project, I succesfully orchestrated the deployment of a scalable WordPress application on AWS, using an Application Load Balancer for efficient traffic distribution.
 												Automation through an EC2 Auto Scaling Group with a customized launch template streamlined the process.
-												Dynamic scaling policies based on CPU utilization thresholds were implemented for optimal resource management.
-												Media access across instances was facilitated through an integrated Elastic File System (EFS).
+												Dynamic scaling policies based on EC2 CPU utilization thresholds were implemented for optimal resource management.
+												Media access and storage across instances was facilitated through an integrated Elastic File System (EFS).
 												The project also involved migrating a local EC2 MariaDB database to an RDS instance for enhanced scalability and reliability.
 										</p>
 											<!-- <a href="#" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="images/ServerlessEmailArchitecture.png" class="image"><img src="images/ServerlessEmailArchitecture.png" alt="" /></a>
-											<h3 class="major">Serverless Application hosted on AWS <br> Using S3, API Gateway, Lambda, Step Functions, and SES</h3>
+											<h3 class="major">Serverless Email Reminder Application <br> Using AWS S3, API Gateway, Lambda, Step Functions, and SES</h3>
 											<p><br>
 											
-											I designed and implemented a Serverless Email Reminder system, ensuring a seamless flow of communication.
-											IAM Roles were meticulously set up, granting appropriate permissions for the application services. 
+											In this project, I implemented a Serverless Email Reminder system, ensuring a seamless flow of communication.
+											The appropriate IAM Roles were set up, granting appropriate permissions for the application services. 
 												The frontend static website, containing HTML, JavaScript, and CSS files, was hosted on an S3 bucket.
 												JavaScript facilitated user input and communication with an API Endpoint.
 												A REST API Endpoint was deployed to invoke the API_Lambda for backend compute. 
@@ -143,8 +156,8 @@ Personal Website
 										</article>
 										<article>
 											<a href="images/WebsiteArchitecture.png" class="image"><img src="images/WebsiteArchitecture.png" alt="" /></a>
-											<h3 class="major"> Website hosted on AWS<br>
-												Using S3, Route 53, CloudFront, ACM, Lambda, DynamoDB, CodePipeline, Github  </h3>
+											<h3 class="major"> Personal Website hosted on AWS<br>
+												Using S3, Route 53, CloudFront, ACM, Lambda, DynamoDB, CodePipeline, Github</h3>
 											<p>  <br>
 											I developed a personal website using AWS services for optimal performance and functionality. Starting with the creation of an S3 bucket, I deployed a CloudFront CDN distribution with the S3 bucket as the origin access identity (OAI).
 												The domain was registered with Route 53, and an A record was configured to direct traffic to the CloudFront distribution.
@@ -152,17 +165,17 @@ Personal Website
 												For visitor tracking, a DynamoDB table was set up to store website view counts.
 												A Lambda function, equipped with CORS, was created to increment the DynamoDB view count table based on website viewership.
 												To streamline updates, a connection to a GitHub repository was established using CodePipeline, automating the deployment process.
-												This project reflects my proficiency in leveraging AWS services to create a secure, dynamic, and automated personal website.
+												
 											<!-- <a href="jhoelcarballo.com" class="special">Learn more</a> -->
 										</article>
 										<article>
 											<a href="images/JenkinsAutomation.png" class="image"><img src="images/JenkinsAutomation.png" alt="" /></a>
 											<h3 class="major"> Automating Jenkins Application on Linux with Terraform</h3>
 											<p> <br>
-												I automated the deployment of a Jenkins application on Amazon EC2 using Terraform, streamlining the infrastructure provisioning process.
-												The Terraform script orchestrated the creation of an EC2 instance, specifying the required configuration details such as instance type, security groups, and key pair.
-												Additionally, I automated the installation and configuration of Jenkins on the EC2 instance by utilizing remote execution scripts. The setup also included defining necessary networking components like VPC and subnets to ensure proper connectivity.
-												The Terraform automation expedites the deployment of Jenkins and also ensures consistency and reproducibility, simplifying the management of the Jenkins infrastructure on EC2.</p>
+												This project showcases the deployment of a Jenkins application on Amazon EC2 using Terraform, streamlining the infrastructure provisioning process.
+												The Terraform script orchestrated the creation of an EC2 instance, specifying the required configuration details such as instance type, security groups, and a key pair.
+												Additionally, I automated the installation and configuration of Jenkins on the EC2 instance by utilizing remote execution scripts. The setup also included defining necessary networking components such VPC and subnets to ensure proper connectivity.
+												The Terraform automation expedites the deployment of Jenkins and also ensures consistency and reproducibility to simplify the management of the Jenkins infrastructure on EC2.</p>
 											<!-- <a href="#" class="special">Learn more</a> --> 
 										</article>
 									        <article>
