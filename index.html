@@ -192,9 +192,8 @@ Personal Website
 											<a href="images/Marketing_Email.png" class="image"><img src="images/Marketing_Email.png" alt="" /></a>
 											<h3 class="major">Marketing Email Automation with AWS</h3>
 											<p>This project automates the process of sending weekly marketing emails using AWS services. A file containing new weekly challenges and a CSV with subscriber emails are uploaded to S3.
-												An EventBridge-triggered Lambda function selects a random challenge, generates an HTML email template, and uploads it to S3. Another Lambda function, triggered by the S3 put event,
-												reads the subscriber list and sends personalized emails via Amazon SES.
-												This serverless solution ensures realiable, scalable, and automated markeint or newsletter email delivery.
+												An EventBridge-triggered Lambda function selects a random challenge each week, generates an HTML email template, and uploads it to S3. Another Lambda function, triggered by the S3 put event, reads the subscriber list and
+												sends personalized emails via Amazon SES. This serverless solution ensures reliable, scalable, and automated marketing or newsletter email delivery.
 											</p>
 											<a href="https://s3.us-east-1.amazonaws.com/jhoelcarballo.com/assets/publicAssets/email_template.html" class="special">View a sample template!</a> 
 										</article> 
